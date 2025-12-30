@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Management Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="auth">
+    <h2>Login / Register</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="register()">Register</button>
+    <button onclick="login()">Login</button>
+</div>
+
+<div class="app hidden">
+    <h2>Task Management Tool</h2>
+    <input type="text" id="task" placeholder="Task name">
+    <input type="datetime-local" id="deadline">
+    <button onclick="addTask()">Add Task</button>
+
+    <ul id="taskList"></ul>
+    <button onclick="logout()">Logout</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
